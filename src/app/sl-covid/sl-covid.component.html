@@ -1,0 +1,45 @@
+<div class="container">
+  <h1 class="text-center">Sri Lanka</h1>
+</div>
+<div class="m-3">
+  <div class="d-flex justify-content-center">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/hos.png" alt="Card image cap">
+        <div class="card-body text-center">
+          <h3 class="card-title text-warning">{{covidData.data.local_total_cases.toLocaleString()}}</h3>
+          <h4 class="card-text text-warning">Total cases</h4>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/bed.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-danger">{{covidData.data.local_active_cases.toLocaleString()}}</h3>
+          <h4 class="card-text text-danger">Active Cases</h4>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/amb.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-primary">{{covidData.data.local_new_cases.toLocaleString()}}</h3>
+          <h4 class="card-text text-primary">Daily New Cases</h4>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem;">
+        <img class="card-img-top" src="/assets/run.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-success">{{covidData.data.local_recovered.toLocaleString()}}</h3>
+          <h4 class="card-text text-success">Recovered</h4>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/dead.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-black-50">{{covidData.data.local_deaths.toLocaleString()}}</h3>
+          <h4 class="card-text text-black-50">Deaths</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
