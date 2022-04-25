@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CovidDataService} from "../covid-data.service";
 
 @Component({
   selector: 'app-global-covid',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GlobalCovidComponent implements OnInit {
 
-  constructor() { }
+  covidData:any;
+  constructor(private covidService:CovidDataService) {
+    this.covidService.getCovidData().subscribe((response)=>{
+      this.covidData = response;
+    })
+  }
 
   ngOnInit(): void {
   }

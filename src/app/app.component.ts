@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
 
   constructor(private covidService: CovidDataService) {
     this.covidService.getCovidData().subscribe((response)=>{
-      console.warn("data",response)
+      /*console.warn("data",response)*/
       //constructor eke return type karanne na
       // wena function ekakanm return type karanwa
       this.coviddata = response;

@@ -1,1 +1,38 @@
-<p>global-covid works!</p>
+<div class="container">
+  <h1 class="text-center">Global Covid</h1>
+</div>
+<div class="m-3">
+  <div class="d-flex justify-content-center">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/hos.png" alt="Card image cap">
+        <div class="card-body text-center">
+          <h3 class="card-title text-warning">{{covidData.data.global_total_cases.toLocaleString()}}</h3>
+          <h4 class="card-text text-warning">Global Total Cases</h4>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/bed.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-danger">{{covidData.data.global_new_cases.toLocaleString()}}</h3>
+          <h4 class="card-text text-danger">Global New Cases</h4>
+        </div>
+      </div>
+      <div class="card " style="width: 18rem;">
+        <img class="card-img-top" src="/assets/run.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-success">{{covidData.data.global_recovered.toLocaleString()}}</h3>
+          <h4 class="card-text text-success">Global Recovered</h4>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/assets/dead.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-black-50">{{covidData.data.global_deaths.toLocaleString()}}</h3>
+          <h4 class="card-text text-black-50">Global Deaths</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
