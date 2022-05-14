@@ -11,6 +11,6 @@ export class CovidDataService {
   constructor(private http:HttpClient) { }
 
   getCovidData(){
-    return this.http.get("https://www.hpb.health.gov.lk/api/get-current-statistical")
+    return this.http.get("https://www.hpb.health.gov.lk/api/get-current-statistical");
   }
 }
